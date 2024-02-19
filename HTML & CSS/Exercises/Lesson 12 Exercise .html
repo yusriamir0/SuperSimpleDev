@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 12 Exercise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- 12a -->
+  <body style="font-family: 'Roboto', sans-serif; background-color: black">
+    <div style="display: flex">
+      <div style="width: 200px; background-color: lightblue">200px</div>
+      <div style="width: 75px; background-color: lightpink">75px</div>
+    </div>
+    <p style="color: white">============================</p>
+
+    <!-- 12b -->
+    <div style="display: flex">
+      <div style="width: 50px; background-color: lightblue">item1</div>
+      <div style="flex: 1; background-color: lightpink">item2</div>
+      <div style="width: 75px; background-color: lightblue">item3</div>
+    </div>
+
+    <!-- 12c -->
+    <p style="color: white">============================</p>
+    <style>
+      .flexbox-12c {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <div class="flexbox-12c">
+      <div style="background-color: lightpink">item1</div>
+      <div style="background-color: lightblue">item2</div>
+      <div style="background-color: lightpink">item3</div>
+      <div style="background-color: lightblue">item4</div>
+    </div>
+    <!-- 12d -->
+    <p style="color: white">============================</p>
+    <style>
+      .flexbox-12d-border {
+        border: solid;
+        border-width: 2px;
+        border-color: #416dec;
+      }
+      .flexbox-12d {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+      }
+    </style>
+    <div class="flexbox-12d-border">
+      <div class="flexbox-12d">
+        <div style="background-color: lightpink">item1</div>
+        <div style="background-color: lightpink">item2</div>
+      </div>
+    </div>
+
+    <!-- 12e -->
+    <p style="color: white">============================</p>
+
+    <style>
+      .overall-12e {
+        width: 250px;
+        background-color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        border-color: grey;
+        background-color: white;
+        padding: 10px;
+      }
+      .flexbox-12e {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+    </style>
+    <div class="overall-12e">
+      <div class="flexbox-12e">
+        <div style="background-color: white">Home</div>
+        <div><button>14</button></div>
+      </div>
+
+      <div class="flexbox-12e">
+        <div style="background-color: white">Home</div>
+        <div><button>14</button></div>
+      </div>
+    </div>
+    <!--12g-->
+    <p style="color: white">============================</p>
+    <style>
+      .flexbox-12g {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 350px;
+      }
+    </style>
+    <div class="flexbox-12g">
+      <div><img src="/Lessons/Lesson 10.jpeg" alt="" /></div>
+      <div style="margin-right: 150px">
+        <div>oliver</div>
+        <div>the cat</div>
+        <div>Popular</div>
+      </div>
+      <div style="margin-right: 10px"><button>Follow</button></div>
+    </div>
+
+    <div class="flexbox-12g">
+      <div><img src="/Lessons/Lesson 10.jpeg" alt="" /></div>
+      <div style="margin-right: 150px">
+        <div>oliver</div>
+        <div>the cat</div>
+        <div>Popular</div>
+      </div>
+      <div style="margin-right: 10px"><button>Follow</button></div>
+    </div>
+    <!--12f-->
+    <p style="color: white">============================</p>
+    <style>
+      .flexbox-12f {
+        background-color: #7055ac;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 35px;
+        width: 600px;
+        font-size: 15px;
+      }
+      .input-12f {
+        width: 350px;
+        border-radius: 30px;
+        border-style: none;
+        padding-left: 10px;
+        font-size: 9px;
+        height: 18px;
+      }
+      .button-12f {
+        background-color: #7055ac;
+        color: white;
+        border-width: 1px;
+        border-style: solid;
+        border-color: white;
+        margin-right: 10px;
+      }
+    </style>
+
+    <div class="flexbox-12f">
+      <div style="padding-left: 10px">Home</div>
+      <div><input class="input-12f" type="text" placeholder="Search" /></div>
+      <div><button class="button-12f">Download</button></div>
+    </div>
+  </body>
+</html>

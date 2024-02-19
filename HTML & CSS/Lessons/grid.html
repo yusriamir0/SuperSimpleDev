@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 11 Grid</title>
+  </head>
+  <body style="background-color: black">
+    <div style="display: grid; grid-template-columns: 100px 100px">
+      <div style="background-color: lightblue">Div 1</div>
+      <div style="background-color: lightpink">Div 2</div>
+    </div>
+
+    <div
+      style="
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 100px 100px 200px;
+      "
+    >
+      <div style="background-color: lightblue">100px</div>
+      <div style="background-color: lightpink">100px</div>
+      <div style="background-color: lightgreen">200px</div>
+      <div style="background-color: lightgreen">100px</div>
+    </div>
+    <div
+      style="margin-top: 30px; display: grid; grid-template-columns: 100px 1fr"
+    >
+      <div style="background-color: lightblue">100px</div>
+      <div style="background-color: lightpink">1fr</div>
+    </div>
+
+    <div
+      style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 200px;
+        column-gap: 10px;
+        row-gap: 10px;
+      "
+    >
+      <div style="background-color: lightblue">100px</div>
+      <div style="background-color: red">1fr</div>
+      <div style="background-color: lightyellow">2fr</div>
+
+      <div style="background-color: blue">100px</div>
+      <div style="background-color: lightpink">1fr</div>
+      <div style="background-color: blue">2fr</div>
+    </div>
+  </body>
+</html>

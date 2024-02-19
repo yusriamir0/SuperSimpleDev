@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6k Exercise Cart Quantity</title>
+</head>
+<body>
+    <button onclick="
+        if (cartQuantity + 4 > 10) {
+            alert('The cart if full');        
+        } else {
+            cartQuantity += 4;
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }  
+        
+    ">+4</button>
+    
+    <button onclick="
+        if (cartQuantity + 5 > 10) {
+            alert('The cart if full')
+        } else {
+            cartQuantity += 5;
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        }
+    ">+5</button>
+
+    <button onclick="
+        if (cartQuantity <= 0) {
+            alert('Not enought items in the cart')
+        } else {
+            cartQuantity --;
+            console.log(`Remove from cart: ${cartQuantity}`);
+        }
+       
+    ">Remove from cart</button>
+
+    <button onclick="
+        if (cartQuantity <= 0) {
+            alert('Not enought items in the cart')
+        } else {
+            cartQuantity -= 2;
+            console.log(`Remove from cart: ${cartQuantity}`);
+        }       
+    ">-2</button>
+
+    <button onclick=" 
+        if (cartQuantity <= 0) {
+            alert('Not enought items in the cart')
+        } else {
+            cartQuantity -=3;
+            console.log(`Remove from cart: ${cartQuantity}`);
+        } 
+    ">-3</button>
+
+    <script>
+      let cartQuantity = 0 ;
+    </script>
+</body>
+</html>

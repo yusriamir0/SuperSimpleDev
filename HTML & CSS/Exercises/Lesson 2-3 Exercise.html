@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 2-3 Exercise</title>
+  </head>
+  <!-- 2a Uber-->
+  <style>
+    .btn-request {
+      background-color: black;
+      color: white;
+      border: solid;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      transition: opacity 1s;
+    }
+    .btn-request:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  </style>
+  <button class="btn-request">Request now</button>
+
+  <!-- 2b Amazon-->
+  <div>
+    <style>
+      .btn-amazon {
+        margin-top: 20px;
+        background-color: rgb(250, 217, 76);
+        color: black;
+        border: none;
+        border-radius: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        transition: background-color 0.5s;
+      }
+      .btn-amazon:hover {
+        cursor: pointer;
+        background-color: rgb(208, 170, 0);
+      }
+    </style>
+    <button class="btn-amazon">Add to Cart</button>
+  </div>
+
+  <!-- 2c GitHub -->
+  <div>
+    <style>
+      .btn-github {
+        margin-top: 20px;
+        background-color: rgb(87, 163, 88);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: box-shadow 1s;
+      }
+
+      .btn-github:hover {
+        cursor: pointer;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+    <button class="btn-github">Sign up</button>
+  </div>
+
+  <!-- 2d. Bootstrap -->
+  <div>
+    <style transition: 1s>
+      .btn-get {
+        background-color: rgb(121, 82, 179);
+        color: white;
+        border: none;
+        border-radius: 3px;
+        font-weight: bold;
+        margin-right: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: background-color 1s;
+      }
+
+      .btn-get:hover {
+        cursor: pointer;
+        background-color: rgb(75, 32, 139);
+      }
+      .btn-download {
+        background-color: white;
+        color: rgb(108, 117, 125);
+        border-color: rgb(108, 117, 125);
+        border: solid;
+        border-width: 1px;
+        border-radius: 3px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        transition: background-color 0.5s, color 0.5s ;
+      }
+      .btn-download:hover {
+        cursor: pointer;
+        background-color: rgb(108, 117, 125);
+        color: white;
+      }
+    </style>
+    <button class="btn-get">Get Started</button>
+    <button class="btn-download">Download</button>
+  </div>
+
+  <!-- 2e Linkedin -->
+  <div style="margin-top: 20px">
+    <style>
+      .btn-apply {
+        background-color: rgb(10, 102, 194);
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-weight: 600;
+        margin-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: background-color 1s;
+      }
+      .btn-apply:hover {
+        cursor: pointer;
+        background-color: rgb(1, 62, 123);
+      }
+      .btn-save {
+        background-color: white;
+        color: rgb(10, 102, 194);
+        border-color: rgb(10, 102, 194);
+        border: solid;
+        border-width: 1.3px;
+        border-radius: 30px;
+        font-weight: 600;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .btn-save:hover {
+        cursor: pointer;
+        background-color: rgb(239, 237, 237);
+        border-width: 1.6px;
+        
+      }
+    </style>
+    <button class="btn-apply">Apply on company website</button>
+    <button class="btn-save">Save</button>
+  </div>
+  <p>------------------------------------------------------</p>
+  <!-- 2f. Challenge Exercise -->
+  <div style="margin-top: 30px">
+    <style>
+      .a-amazon {
+        color: rgb(0, 113, 133);
+        transition: 0.5s;
+      }
+      .a-amazon:hover {
+        color: rgb(164, 102, 8)
+      }
+
+      .title {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .p-39 {
+        color: rgb(0, 118, 0);
+        font-weight: 600;
+      }
+
+      .btn-add {
+        background-color: rgb(255, 216, 20);
+        height: 30px;
+        width: 120px;
+        border: none;
+        border-radius: 30px;
+        font-weight: 550;
+        margin-right: 10px;
+        transition: background-color 1s;
+      }
+      .btn-add:hover {
+        cursor: pointer;
+        background-color: rgb(207, 175, 15);
+      }
+      .btn-add:active {
+        opacity: 0.5;
+      } 
+      .btn-buy {
+        background-color: rgb(255, 164, 28);
+        height: 30px;
+        width: 120px;
+        border: none;
+        border-radius: 30px;
+        font-weight: 550;
+        margin-right: 10px;
+      }
+      .btn-buy:hover {
+        cursor: pointer;
+        background-color: rgb(202, 126, 14);
+      }
+      .btn-buy:active {
+        opacity: 0.5;
+      }
+    </style>
+
+    <a class="a-amazon" href="https://www.amazon.com/" target="_blank"
+      >Back to Amazon</a
+    >
+    <p class="title">Nike Black Running Shoes</p>
+    <p class="p-39">$39 - in stock.</p>
+    <p style="font-size: larger">Free delivery tomorrow.</p>
+    <button class="btn-add">Add to Cart</button>
+    <button class="btn-buy">Buy now</button>
+  </div>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>08 objects</title>
+  </head>
+  <body>
+    <script>
+      const product = {
+        name: "socks",
+        price: 1090,
+        "delivery-time": "1 day",
+        rating: {
+          stars: 4.5,
+          count: 87,
+        },
+        fun: function fungsi() {
+          console.log("function inside object");
+        },
+      };
+      product.name = "cotton socks"; // contoh
+      console.log(product["name"]);
+      console.log(product["delivery-time"]);
+
+      console.log(product.rating.count);
+      product.fun();
+
+      let log = "";
+      console.log(typeof console.log);
+
+      console.log(JSON.stringify(product)); // menyebabkan result akan keluar dalam bentuk string sahaja
+
+      const jsonString = JSON.stringify(product);
+      console.log(JSON.parse(jsonString)); //
+    </script>
+  </body>
+</html>

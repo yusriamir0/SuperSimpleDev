@@ -40,8 +40,8 @@ const object3 = {
 };
 console.log(object1 === object3);
 console.log(object2);
-//* Destructruting
 
+//* Destructruting
 const object4 = {
     message: "Hello",
     price: 40,

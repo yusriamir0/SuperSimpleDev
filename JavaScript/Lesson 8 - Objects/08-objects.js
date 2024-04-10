@@ -64,5 +64,4 @@ const object5 = {
     },
 };
 console.log(object5);
-
 object5.method();

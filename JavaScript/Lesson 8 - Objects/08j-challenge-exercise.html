@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <button onclick="playGame('head')">Head</button>
+        <button onclick="playGame('tail')">Tail</button>
+    </head>
+    <body>
+        <script>
+            function playGame(guess) {
+                // default value for score and parse object
+                let score = JSON.parse(localStorage.getItem("score")) || {
+                    wins: 0,
+                    losses: 0,
+                };
+                // or alternative ways
+                // if (score === null) {
+                //     score = {
+                //         wins: 0,
+                //         losses: 0,
+                //     };
+                // }
+
+                // START random number generator
+                const randomNumber = Math.random();
+                const result = randomNumber < 0.5 ? "head" : "tail";
+                // END random number generator
+
+                // New approach using if-else statement
+                if (
+                    (guess === "head" && result === "tail") ||
+                    (guess === "tail" && result === "head")
+                ) {
+                    const accLoseScore = score.losses++;
+                    console.log(`You lose: ${accLoseScore}`);
+                } else {
+                    const accWinScore = score.wins++;
+                    console.log(`You win : ${accWinScore}`);
+                }
+                localStorage.setItem("score", JSON.stringify(score));
+                console.log(
+                    `You win : ${score.wins}`,
+                    `You lose : ${score.losses}`
+                );
+            }
+        </script>
+    </body>
+</html>

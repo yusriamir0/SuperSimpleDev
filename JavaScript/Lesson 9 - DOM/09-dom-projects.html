@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document Objects Model - Projects</title>
+        <script defer src="09-dom-projects.js"></script>
+    </head>
+    <body>
+        <h1>YouTube Subscribe Button</h1>
+
+        <!-- Inline JS -->
+        <button
+            class="wordBtnChange"
+            onclick="
+        const elementButton = document.querySelector('.wordBtnChange')
+        
+        if (elementButton.innerHTML === 'Subscribe'){
+            document.querySelector('.wordBtnChange').innerHTML = 'Subscribed'
+        } else{
+            document.querySelector('.wordBtnChange').innerHTML= 'Subscribe'
+        }
+        "
+        >
+            Subscribe
+        </button>
+
+        <!-- External JS -->
+        <!-- <button onclick="wordChanging()" class="js-subscribe-button">
+            Subscribe
+        </button> -->
+    </body>
+</html>

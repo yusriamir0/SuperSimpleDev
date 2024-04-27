@@ -10,9 +10,11 @@
         <!-- 1. fikir macam mana nak buat step-step algorithm set of instructions  -->
         <!-- 2. Tukarkan ayat tersebut kepada code -->
         <p>Amazon Shipping Calculator</p>
+        <!-- 3. Masukkan event.key supaya bila tekan Enter calculation akan ambil alih -->
         <input
+            onkeydown="handleCostKeyDown(event)"
             placeholder="Cost of Order"
-            class="js-cost-input"
+            class="js-cost-input"`
             type="text"
             name=""
             id=""

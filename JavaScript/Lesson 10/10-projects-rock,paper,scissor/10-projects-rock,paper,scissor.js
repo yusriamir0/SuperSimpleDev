@@ -59,9 +59,13 @@ function jomMain(pemainGerak) {
     document.querySelector(".js-result").innerHTML = result;
 
     //* querySelector() untuk movement Player dan Comp
-    document.querySelector(
-        ".js-move"
-    ).innerHTML = `YOU : ${pemainGerak} vs ${pergerakanComp} : COMPUTER`;
+    document.querySelector(".js-move").innerHTML = `
+    <p class="js-move">
+    You
+    <img src="images/${pemainGerak}-emoji.png" alt="" class="move-icon" /> 
+    <img src="images/${pergerakanComp}-emoji.png" alt="" class="move-icon" />
+    Computer
+</p>`;
     updateScore();
 }
 

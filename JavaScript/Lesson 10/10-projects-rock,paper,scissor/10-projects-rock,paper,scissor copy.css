@@ -1,0 +1,34 @@
+body {
+    box-sizing: 0px;
+    background-color: black;
+    color: white;
+}
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+.move-icon {
+    height: 50px;
+}
+.move-button {
+    cursor: pointer;
+    border: 3px solid white;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    background-color: transparent;
+    margin-right: 10px;
+}
+.js-result,
+.js-move,
+.js-score {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button-reset-score {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+}

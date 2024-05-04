@@ -5,44 +5,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>08 Rock Paper Scissors</title>
         <script defer src="10-projects-rock,paper,scissor.js"></script>
-        <style>
-            body {
-                background-color: grey;
-                color: white;
-            }
-        </style>
+        <link rel="stylesheet" href="10-projects-rock,paper,scissor copy.css" />
     </head>
     <body>
-        <p>Rock Paper Scissors</p>
+        <p class="title">Rock Paper Scissors</p>
 
         <button
+            class="move-button"
             onclick="
         jomMain('rock');
     "
         >
-            Rock
+            <img src="images/rock-emoji.png" alt="" class="move-icon" />
         </button>
 
         <button
+            class="move-button"
             onclick="
         jomMain('paper');
     "
         >
-            Paper
+            <img src="images/paper-emoji.png" alt="" class="move-icon" />
         </button>
 
         <button
+            class="move-button"
             onclick="
         jomMain('scissors');
     "
         >
-            Scissors
+            <img src="images/scissors-emoji.png" alt="" class="move-icon" />
         </button>
         <!-- Update each of the values -->
         <p class="js-result"></p>
         <p class="js-move"></p>
         <p class="js-score"></p>
 
-        <button onclick="resetScore()">Reset Score</button>
+        <button onclick="resetScore() " class="button-reset-score">
+            Reset Score
+        </button>
     </body>
 </html>

@@ -27,3 +27,23 @@
     padding: 16px 24px;
     border-radius: 8px;
 }
+
+.gaming-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 16px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.is-toggled {
+    background-color: rgb(230, 230, 230);
+    border: none;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    padding: 16px 24px;
+    border-radius: 8px;
+}

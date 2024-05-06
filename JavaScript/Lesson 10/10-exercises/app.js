@@ -6,15 +6,54 @@ const verifyJSButton = document
 console.log(verifyJSButton);
 
 // 10d
-// Gaming button will ON / OFF when clicked
-const buttonGamingStyle = document.querySelector(".gaming-button");
-const styleChange = () => {
-    if (!buttonGamingStyle.classList.contains("is-toggled")) {
-        buttonGamingStyle.classList.add("is-toggled");
+// Gaming, Music, Tech button will ON / OFF when clicked
+const styleChangeGaming = () => {
+    const buttonStyle = document.querySelector(".gaming-button");
+    if (!buttonStyle.classList.contains("is-toggled")) {
+        buttonStyle.classList.add("is-toggled");
     } else {
-        buttonGamingStyle.classList.remove("is-toggled");
+        buttonStyle.classList.remove("is-toggled");
     }
-
     // alternative way using toggle()
-    // buttonGamingStyle.classList.toggle("is-toggled");
+    // buttonStyle.classList.toggle("is-toggled");
+};
+
+// 10e, 10f
+// Music, Tech button will ON / OFF when clicked
+const styleChangeMusic = () => {
+    const buttonStyle = document.querySelector(".music-button");
+    if (!buttonStyle.classList.contains("is-toggled")) {
+        buttonStyle.classList.add("is-toggled");
+    } else {
+        buttonStyle.classList.remove("is-toggled");
+    }
+};
+
+const styleChangeTech = () => {
+    const buttonStyle = document.querySelector(".tech-button");
+    if (!buttonStyle.classList.contains("is-toggled")) {
+        buttonStyle.classList.add("is-toggled");
+    } else {
+        buttonStyle.classList.remove("is-toggled");
+    }
+};
+
+// Challenge exercises
+
+// 10g
+// Only 1 button can click at a time
+const oneAtTime = (selector) => {
+    const buttonStyle = document.querySelector(selector);
+    if (!buttonStyle.classList.contains("is-toggled")) {
+        removeClickedButton();
+        buttonStyle.classList.add("is-toggled");
+    } else {
+        buttonStyle.classList.remove("is-toggled");
+    }
+};
+const removeClickedButton = () => {
+    const previousButton = document.querySelector(".is-toggled");
+    if (previousButton) {
+        previousButton.classList.remove("is-toggled");
+    }
 };

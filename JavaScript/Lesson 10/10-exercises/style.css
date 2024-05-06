@@ -28,7 +28,12 @@
     border-radius: 8px;
 }
 
-.gaming-button {
+.gaming-button,
+.music-button,
+.tech-button,
+.passParamGaming,
+.passParamMusic,
+.passParamTech {
     background-color: black;
     color: white;
     border: none;

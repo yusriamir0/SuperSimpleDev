@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Amazon Shipping Calculator</title>
+        <link rel="stylesheet" href="10h-project-amz-calculator.css" />
+        <script defer src="10h-project-amz-calculator.js"></script>
+    </head>
+    <body>
+        <!-- 1. fikir macam mana nak buat step-step algorithm set of instructions  -->
+        <!-- 2. Tukarkan ayat tersebut kepada code -->
+        <p>Amazon Shipping Calculator</p>
+        <!-- 3. Masukkan event.key supaya bila tekan Enter calculation akan ambil alih -->
+        <input
+            onkeydown="handleCostKeyDown(event)"
+            placeholder="Cost of Order"
+            class="js-cost-input cost-input"
+            `
+            type="number"
+            name=""
+            id=""
+        />
+        <button onclick="calculateTotal()" class="calculate-button">
+            Calculate
+        </button>
+        <p class="displayTotalCost"></p>
+
+        <!-- Dislay error message -->
+        <p class="errorMessage redWarningMessage"></p>
+    </body>
+</html>

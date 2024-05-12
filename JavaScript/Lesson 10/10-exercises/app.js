@@ -38,7 +38,7 @@ const styleChangeTech = () => {
     }
 };
 
-// Challenge exercises
+// Challenge exercises //
 
 // 10g
 // Only 1 button can click at a time

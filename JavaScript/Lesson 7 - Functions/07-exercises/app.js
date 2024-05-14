@@ -37,15 +37,24 @@ const convertLength = (length, from, to) => {
         return length * 5280 + to;
     } else if (from == "km" && to == "ft") {
         return length * 3281 + to;
+    } else if (from !== ("miles" && "km" && "ft")) {
+        return `Invalid unit: ${from}`;
+    } else if (to !== ("miles" && "km" && "ft")) {
+        return `Invalid unit: ${to}`;
+    } else if (from === to) {
+        return length + from;
     } else {
         return length + to;
     }
 };
 console.log(convertLength(50, "miles", "km"));
 console.log(convertLength(32, "km", "miles"));
-console.log(convertLength(50, "km", "km"));
+console.log(convertLength(50, "miles", "miles"));
 
 // ! 7h create function to convert to between km, miles and feet
 console.log(convertLength(5, "miles", "km"));
 console.log(convertLength(5, "miles", "ft"));
 console.log(convertLength(5, "km", "ft"));
+
+// ! 7i make statement of invalid units
+console.log(convertLength(5, "lbs", "lbs"));

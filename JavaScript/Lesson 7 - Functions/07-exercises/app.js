@@ -29,13 +29,16 @@ console.log(convertToCelsius(86, "C"));
 
 // ! 7g convert length to another unit that takes number and unit
 const convertLength = (length, from, to) => {
-    let milesToKm = 1.609344 * length;
-    return milesToKm + to;
-
-    let kmToMiles = length / 1.609344;
-    return kmToMiles + to;
+    if (from == "miles" && to == "km") {
+        return length * 1.6 + to;
+    } else if (from == "km" && to == "miles") {
+        return length / 1.6 + to;
+    } else {
+        return length + to;
+    }
 };
-
 console.log(convertLength(50, "miles", "km"));
 console.log(convertLength(32, "km", "miles"));
 console.log(convertLength(50, "km", "km"));
+
+// ! 7h create function that takes 2 objects and check if they are the same

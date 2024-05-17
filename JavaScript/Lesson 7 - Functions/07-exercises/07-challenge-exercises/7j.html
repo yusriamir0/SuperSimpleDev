@@ -26,7 +26,7 @@
         <p>
             <button onclick="updateCalculation('.')">.</button>
             <button onclick="updateCalculation('/')">/</button>
-            <button onclick="updateClear('')">Clear</button>
+            <button onclick="updateClear()">Clear</button>
         </p>
 
         <button
@@ -43,12 +43,16 @@
         </button>
 
         <script>
+            let calculation = "";
             const updateCalculation = (value) => {
                 calculation += value;
-                console.log(updateCalculation(value));
+                console.log(calculation);
             };
 
-            const updateClear = (value) => let calculation   = ""
+            const updateClear = () => {
+                calculation = "";
+                console.log(calculation);
+            };
         </script>
     </body>
 </html>
